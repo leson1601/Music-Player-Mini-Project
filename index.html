@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempoyo Music Player </title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-5.15.2-web/css/all.min.css">
+    <!-- reset css -->
+    <link rel="stylesheet" href="/assets/css/reset.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+<body>
+    <div class="app">
+        <div class="app__container">
+
+            <div class="header">
+                <div class="header__back-btn">
+                    <i class="fas fa-chevron-circle-left"></i>
+                </div>
+                <div class="header__title">Playing now</div>
+                <div class="header__song-list-btn">
+                    <img src="/assets/img/music-playlist-icon-24.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-thumb-container">
+                <div class="song-thumb">                    
+                </div>
+            </div>
+            <div class="song-info">
+                <div class="song-info__name">Yeu em dai kho</div>
+                <div class="song-info__artist">
+                    Vinh Khuat
+                </div>
+            </div>
+            <div class="song-option-btn">
+                <div class="repeat-btn active">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="shuffle-btn active">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+            <div class="song-time">
+                <div class="song-current-time">
+                    00:00
+                </div>
+                <div class="song-total-time">
+                    03:54
+                </div>
+            </div>
+            <input type="range" name="song-range" id="song-range" min="0" max="100" value="0" step="0.5">
+
+            <div class="song-control-btn ">
+                <div class="prev-btn">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div class="song-play-btn playing">
+                    <i class="fas fa-play song-play-btn--playing"></i>
+                    <i class="fas fa-pause song-play-btn--pause"></i>
+                </div>
+                <div class="next-btn">
+                    <i class="fas fa-forward"></i>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
