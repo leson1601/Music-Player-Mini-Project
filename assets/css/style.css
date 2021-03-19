@@ -16,6 +16,7 @@ html {
 
 .app {
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -23,9 +24,9 @@ html {
     background: linear-gradient(rgba(246, 181, 49, 0.4), rgba(252, 74, 26, 0.4));
     width: 100%;
     height: 100vh;
-    max-width: 480px;   
+    max-width: 480px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 40px 20px;
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s ease 0s;
@@ -60,6 +61,9 @@ html {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 30px;
+    user-select: none;
+    padding-right: 35px;
+
 }
 
 .header__song-list-btn {
@@ -75,7 +79,7 @@ html {
 .song-thumb-container {
     position: relative;
     width: 60%;
-    padding-top: 60%;
+    padding-top: 60%;    
     margin: 40px auto 20px;
 }
 
@@ -106,6 +110,7 @@ html {
     overflow: hidden;
     display: block;
     text-overflow: ellipsis;
+    user-select: none;
     text-align: center;
 }
 
@@ -117,6 +122,7 @@ html {
     overflow: hidden;
     display: block;
     text-overflow: ellipsis;
+    user-select: none;
     text-align: center;
 
 }
@@ -317,7 +323,7 @@ input[type=range]{
 .songs-list__header-container {
     top: 0;
     left: 0;
-    padding: 60px 20px 0 20px;
+    padding: 40px 20px 0 20px;
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -345,6 +351,8 @@ input[type=range]{
     text-transform: uppercase;
     line-height: 30px;
     padding-right: 30px;
+    user-select: none;
+
 }
 
 .song-item__wrapper {
@@ -401,12 +409,16 @@ input[type=range]{
     text-overflow: ellipsis; 
     overflow: hidden; 
     white-space: nowrap;
+    user-select: none;
+
 
 }
 
 .song-item__artist {
     font-size: 1.4rem;
     margin-top: 4px;
+    user-select: none;
+
 
 }
 
